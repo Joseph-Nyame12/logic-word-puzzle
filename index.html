@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logic Word Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/Br1.jpg">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Logic Word Puzzle</h1>
+    <div id="level-screen">
+      <h2>Select a Category</h2>
+      <div id="category-buttons">
+        <button class="category-btn" data-category="bible">Bible</button>
+        <button class="category-btn" data-category="math">Math</button>
+        <button class="category-btn" data-category="code">Code</button>
+        <button class="category-btn" data-category="memory">Memory</button>
+        <button class="category-btn" data-category="grammar">Grammar</button>
+        <button onclick="startMultiplayerMode()">⚔️ Multiplayer Battle</button>
+      </div>
+
+      <!-- 🎯 Add Daily Challenge Button here -->
+<div style="margin-top: 15px;">
+  <button onclick="startDailyChallenge()">🎯 Daily Challenge</button>
+</div>
+
+      <!-- Popup modal for level selection -->
+      <div id="level-popup" class="modal hidden">
+        <div class="modal-content">
+          <h3>Select Level</h3>
+          <div id="level-buttons" class="level-options">
+            <button class="level-btn" data-level="beginner">Beginner</button>
+            <button class="level-btn" data-level="easy">Easy</button>
+            <button class="level-btn" data-level="medium">Medium</button>
+            <button class="level-btn" data-level="hard">Hard</button>
+            <button class="level-btn" data-level="expert">Expert</button>
+          </div>
+          <button id="cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+   <!-- Admin Access Button -->
+<button onclick="openAdminPopup()">🔒 Admin Access</button>
+
+<!-- Admin Panel Modal -->
+<div id="admin-popup" class="modal hidden">
+  <div class="modal-content">
+    <h3>Admin Panel – Add Word to Category/Level</h3>
+
+    <label for="admin-category">Category:</label>
+    <select id="admin-category">
+      <option value="bible">Bible</option>
+      <option value="math">Math</option>
+      <option value="code">Code</option>
+      <option value="memory">Memory</option>
+      <option value="daily">Daily</option>
+      <option value="grammar">Grammar</option>
+    </select>
+
+    <label for="admin-level">Level:</label>
+    <select id="admin-level">
+      <option value="beginner">Beginner</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+      <option value="expert">Expert</option>
+    </select>
+
+    <input type="text" id="admin-word" placeholder="Enter new word" />
+    <button onclick="addAdminWord()">Add Word</button>
+    <button onclick="logoutAdmin()">Logout</button>
+    <button onclick="closeAdminPopup()">Close</button>
+    <p id="admin-feedback"></p>
+  </div>
+</div>
+    <div id="game-screen" class="hidden">
+      <div class="status">
+        <span id="score">Score: 0</span>
+        <span id="timer">Time: 30</span>
+        <span id="coins">Coins: 0</span>
+        <span id="high-score">High Score: 0</span>
+      </div>
+<div class="puzzle-box">
+  <h3 id="level-name"></h3>
+  <div id="progress" style="margin-bottom: 10px;">Word 1 of 10</div>
+  <h2 id="scrambled-word">_ _ _</h2>
+
+  <input type="text" id="user-input" placeholder="Your guess..." />
+  
+  <div id="hint" style="color: #555; margin: 5px 0;"></div>
+  <p id="feedback"></p>
+
+  <div style="margin-top: 10px;">
+    <button onclick="checkAnswer()">Submit</button>
+    <button onclick="showHint()">Hint</button>
+    <button onclick="skipWord()">Skip</button>
+    <button id="next-btn" onclick="nextWord()" class="hidden">Next Word</button>
+  </div>
+</div>
+  </div>
+  
+    <div id="result-screen" class="hidden">
+      <h2>Game Over!</h2>
+      <p id="final-score"></p>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+
+    <div id="leaderboard-screen" class="hidden">
+  <h2>🏆 Leaderboard</h2>
+  <ul id="leaderboard-list"></ul>
+  <button onclick="restartGame()">Back to Menu</button>
+</div>
+
+  <footer>
+    <a href="about.html">About</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="contact.html">Contact</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

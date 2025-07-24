@@ -1,0 +1,224 @@
+{
+  "bible": {
+    "beginner": [
+      "jesus", "god", "love", "faith", "grace", "hope", "pray", "bible", "cross", "church",
+      "sin", "peace", "joy", "truth", "light", "angel", "save", "holy", "lord", "heaven",
+      "kind", "good", "sheep", "fish", "bread", "water", "amen", "evil", "soul", "life",
+      "man", "woman", "child", "trust", "walk", "word", "jesus", "serve", "help", "bless",
+      "heart", "praise", "spirit", "light", "voice", "call", "gift", "give", "time", "care"
+    ],
+    "easy": [
+      "moses", "noah", "adam", "eve", "peter", "paul", "john", "mark", "luke", "mary",
+      "joseph", "david", "goliath", "joshua", "jonah", "elijah", "elisha", "samuel", "abraham", "sarah",
+      "isaac", "jacob", "esau", "rebekah", "rachel", "pharaoh", "babylon", "judah", "tribe", "canaan",
+      "promise", "miracle", "heaven", "sinai", "altar", "idol", "flood", "ark", "command", "prophet",
+      "psalms", "proverbs", "disciples", "baptism", "sabbath", "healer", "redeem", "savior", "creator", "messiah"
+    ],
+    "medium": [
+      "covenant", "tabernacle", "ephesians", "galatians", "leviticus", "deuteronomy", "corinthians", "judges", "israel", "jericho",
+      "zion", "hosanna", "apostles", "blessing", "sanctify", "repent", "parables", "kingdom", "messenger", "resurrection",
+      "righteous", "deliverance", "forgiveness", "atonement", "miraculous", "incense", "testimony", "scripture", "scroll", "psalmist",
+      "burnt", "sacrifice", "blasphemy", "holiness", "intercede", "meditate", "salvation", "manger", "nativity", "bethlehem",
+      "nazareth", "galilee", "mount", "preach", "evangelist", "believer", "pharisee", "scribe", "temptation", "fasting"
+    ],
+    "hard": [
+      "zechariah", "nebuchadnezzar", "melchizedek", "mephibosheth", "tabernacle", "ecclesiastes", "lamentations", "deuteronomy", "zephaniah", "habakkuk",
+      "tarsus", "corinth", "ephesus", "sadducees", "pharisees", "synagogue", "armageddon", "transfiguration", "genuflect", "repentance",
+      "pentateuch", "rhema", "logos", "eucharist", "beatitudes", "samaritan", "messianic", "eschatology", "dispensation", "justification",
+      "sanctification", "glorification", "bema", "antichrist", "tribulation", "martyrdom", "anointing", "deacon", "eldership", "council",
+      "diaspora", "scrolls", "paraclete", "seraphim", "cherubim", "synoptic", "canon", "apocalypse", "revelation", "crucifixion"
+    ],
+    "expert": [
+      "anthropomorphism", "transubstantiation", "omnipresence", "omnipotence", "omnipresence", "eschatological", "hermeneutics", "soteriology", "pneumatology", "theophany",
+      "apocrypha", "exegesis", "eisegesis", "sabbatarianism", "premillennialism", "postmillennialism", "amillennialism", "dispensationalism", "pretribulation", "posttribulation",
+      "midtribulation", "trinitarianism", "monotheism", "pantheism", "panentheism", "incarnation", "justification", "predestination", "foreknowledge", "immutability",
+      "intercession", "atonement", "propitiation", "regeneration", "imputation", "ascension", "resurrection", "theology", "martyrdom", "syncretism",
+      "kenosis", "covenantal", "septuagint", "tetragrammaton", "theodicy", "sacrament", "eschaton", "metanoia", "righteousness", "holocaust"
+    ]
+  },
+  "math": {
+    "beginner": [
+      "add", "plus", "sum", "minus", "take", "away", "equal", "count", "ten", "zero",
+      "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "circle",
+      "line", "dot", "half", "whole", "more", "less", "left", "right", "big", "small",
+      "top", "bottom", "side", "shape", "cube", "square", "box", "round", "group", "number",
+      "even", "odd", "add up", "total", "pair", "row", "column", "part", "start", "end"
+    ],
+    "easy": [
+      "number", "digit", "plus", "minus", "times", "divide", "equal", "greater", "less", "counting",
+      "double", "half", "third", "whole", "fraction", "angle", "shape", "corner", "side", "face",
+      "height", "width", "length", "area", "line", "circle", "square", "triangle", "cube", "meter",
+      "inch", "foot", "centimeter", "multiply", "subtract", "add", "divide", "position", "sequence", "pattern",
+      "estimate", "compare", "guess", "value", "measure", "graph", "chart", "axis", "bar", "block"
+    ],
+    "medium": [
+      "integer", "decimal", "percent", "fraction", "equation", "variable", "algebra", "formula", "angle", "radius",
+      "diameter", "parallel", "perpendicular", "coordinate", "quadrant", "geometry", "polygon", "trapezoid", "rhombus", "rectangle",
+      "triangle", "perimeter", "area", "volume", "multiply", "divide", "factors", "multiples", "prime", "composite",
+      "square", "cube", "root", "average", "mean", "mode", "median", "range", "probability", "percentile",
+      "ratio", "proportion", "expression", "simplify", "evaluate", "bracket", "axis", "plot", "graph", "table"
+    ],
+    "hard": [
+      "derivative", "integral", "logarithm", "equation", "inequality", "matrix", "vector", "polynomial", "binomial", "coefficient",
+      "function", "domain", "range", "asymptote", "limit", "factorial", "hypotenuse", "isosceles", "scalene", "quadrilateral",
+      "parallelogram", "transversal", "congruent", "similar", "theorem", "proof", "conjecture", "logic", "sequence", "series",
+      "arithmetic", "geometric", "converge", "diverge", "notation", "sine", "cosine", "tangent", "radian", "degree",
+      "projection", "coordinate", "transpose", "determinant", "identity", "transform", "reflection", "rotation", "dilation", "translation"
+    ],
+    "expert": [
+      "differentiation", "integration", "eigenvalue", "eigenvector", "matrix", "jacobian", "laplacian", "gradient", "scalar", "tensor",
+      "isomorphism", "homomorphism", "bijection", "injection", "surjection", "cardinality", "axiom", "lemma", "corollary", "manifold",
+      "topology", "group", "ring", "field", "module", "sigma", "notation", "hilbert", "banach", "transform",
+      "fourier", "laplace", "zeta", "riemann", "turing", "algorithm", "complex", "imaginary", "real", "rational",
+      "irrational", "natural", "conjecture", "induction", "recursion", "modulus", "congruence", "bijection", "proof", "construct"
+    ]
+  },
+  "code": {
+    "beginner": [
+      "html", "tag", "head", "body", "title", "div", "span", "style", "color", "css",
+      "script", "code", "print", "text", "font", "image", "file", "link", "page", "load",
+      "save", "open", "close", "click", "input", "output", "form", "label", "button", "list",
+      "item", "row", "cell", "box", "line", "border", "width", "height", "size", "align",
+      "left", "right", "top", "bottom", "center", "bold", "italic", "underline", "break", "space"
+    ],
+    "easy": [
+      "html", "css", "javascript", "syntax", "element", "attribute", "value", "function", "variable", "const",
+      "let", "var", "loop", "while", "for", "if", "else", "switch", "case", "break",
+      "return", "number", "string", "boolean", "array", "object", "true", "false", "null", "undefined",
+      "event", "onclick", "hover", "submit", "form", "class", "id", "query", "document", "window",
+      "log", "alert", "prompt", "parse", "index", "push", "pop", "shift", "slice", "join"
+    ],
+    "medium": [
+      "callback", "promise", "async", "await", "then", "catch", "json", "ajax", "fetch", "api",
+      "http", "request", "response", "token", "header", "auth", "storage", "local", "session", "cookie",
+      "encode", "decode", "regex", "match", "replace", "split", "map", "filter", "reduce", "sort",
+      "splice", "concat", "clone", "deepcopy", "scope", "closure", "hoisting", "context", "bind", "call",
+      "apply", "constructor", "prototype", "inheritance", "instance", "class", "module", "import", "export", "default"
+    ],
+    "hard": [
+      "algorithm", "complexity", "recursion", "memoization", "iteration", "graph", "tree", "binary", "search", "sort",
+      "merge", "quick", "bubble", "linkedlist", "stack", "queue", "hash", "table", "set", "map",
+      "trie", "heap", "node", "pointer", "bitwise", "operator", "compile", "interpreter", "syntax", "semantic",
+      "tokenize", "parse", "grammar", "scope", "namespace", "runtime", "debug", "exception", "handler", "throw",
+      "catch", "finally", "try", "context", "closure", "async", "thread", "process", "mutex", "deadlock"
+    ],
+    "expert": [
+      "concurrency", "parallelism", "multithreading", "asynchronous", "microservice", "monolith", "refactor", "designpattern", "singleton", "observer",
+      "factory", "strategy", "dependency", "injection", "abstraction", "polymorphism", "encapsulation", "interface", "composition", "inheritance",
+      "immutability", "serialization", "deserialization", "encryption", "decryption", "authentication", "authorization", "middleware", "framework", "library",
+      "compiler", "interpreter", "virtual", "machine", "container", "docker", "kubernetes", "cloud", "deployment", "CI/CD",
+      "typescript", "graphql", "reactive", "pipeline", "stream", "buffer", "observer", "observable", "generator", "decorator"
+    ]
+  },
+  "memory": {
+    "beginner": [
+      "apple", "banana", "grape", "chair", "table", "pen", "book", "ball", "hat", "shoes",
+      "dog", "cat", "milk", "rice", "car", "bus", "fish", "tree", "star", "cloud",
+      "moon", "sun", "water", "cup", "plate", "fork", "spoon", "bag", "door", "window",
+      "bed", "lamp", "fan", "phone", "clock", "bell", "sock", "shoe", "leaf", "glass",
+      "soap", "coin", "key", "bike", "egg", "jam", "rain", "snow", "frog", "nest"
+    ],
+    "easy": [
+      "mirror", "pencil", "guitar", "carpet", "kitchen", "basket", "flower", "circle", "square", "button",
+      "pillow", "curtain", "bottle", "rabbit", "rocket", "wallet", "jacket", "orange", "banana", "giraffe",
+      "donkey", "parrot", "zebra", "bridge", "tunnel", "ladder", "helmet", "glove", "candle", "camera",
+      "puzzle", "drum", "train", "castle", "beach", "shell", "island", "river", "valley", "forest",
+      "mountain", "desert", "planet", "spaceship", "astronaut", "engine", "mirror", "shadow", "ladder", "scooter"
+    ],
+    "medium": [
+      "umbrella", "microwave", "backpack", "sunglasses", "binoculars", "notebook", "keyboard", "monitor", "printer", "charger",
+      "calendar", "headphone", "thermometer", "telescope", "flashlight", "skateboard", "airplane", "helicopter", "volcano", "hurricane",
+      "earthquake", "recycle", "battery", "magnet", "triangle", "rectangle", "ellipse", "diamond", "compass", "measuring",
+      "journal", "brackets", "glasses", "shampoo", "toothbrush", "sweater", "blanket", "biscuit", "lollipop", "whistle",
+      "paintbrush", "toolbox", "stapler", "scissors", "eraser", "marker", "bandage", "thermos", "popcorn", "iceberg"
+    ],
+    "hard": [
+      "psychology", "architecture", "navigation", "revolution", "abbreviation", "constellation", "recollection", "illustration", "combination", "civilization",
+      "synchronization", "responsibility", "transportation", "conversation", "examination", "prescription", "imagination", "observation", "concentration", "participation",
+      "identification", "communication", "integration", "multiplication", "celebration", "documentation", "representation", "collaboration", "expectation", "supervision",
+      "transformation", "reservation", "complication", "notification", "verification", "application", "association", "limitation", "cooperation", "distribution",
+      "classification", "inspiration", "specification", "recommendation", "coordination", "adaptation", "investigation", "implementation", "compartment", "refrigerator"
+    ],
+    "expert": [
+      "neuroplasticity", "declarative", "procedural", "episodic", "semantic", "synapse", "cognitive", "mnemonic", "hippocampus", "amygdala",
+      "neurotransmitter", "dopamine", "serotonin", "shortterm", "longterm", "consolidation", "recall", "recognition", "chunking", "association",
+      "visualization", "retrieval", "encoding", "flashbulb", "workingmemory", "executivefunction", "neocortex", "spatialmemory", "conditioned", "implicit",
+      "explicit", "anterograde", "retrograde", "primacy", "recency", "lateralization", "plasticity", "neurobiology", "neurocognition", "prefrontal",
+      "cerebellum", "metacognition", "reinforcement", "attentiveness", "mindfulness", "intrusion", "decaytheory", "interference", "recognitioncue", "schema"
+    ]
+  },
+  "daily": {
+    "beginner": [
+      "sun", "rain", "cat", "dog", "ball", "milk", "fish", "book", "car", "hat",
+      "tree", "cup", "shoe", "pen", "star", "moon", "fan", "bed", "leaf", "key",
+      "bag", "egg", "bus", "bell", "soap", "lamp", "box", "fork", "bike", "jam",
+      "door", "glass", "rice", "chair", "plate", "shoe", "frog", "coin", "nest", "snow",
+      "rock", "tent", "flag", "rope", "net", "drum", "goat", "duck", "fire", "mask"
+    ],
+    "easy": [
+      "window", "pillow", "blanket", "bottle", "orange", "rabbit", "parrot", "banana", "ladder", "beach",
+      "shell", "river", "candle", "button", "rocket", "planet", "cloud", "flower", "mirror", "pencil",
+      "bridge", "wallet", "camera", "castle", "guitar", "bucket", "circle", "square", "helmet", "glove",
+      "jacket", "curtain", "tunnel", "shadow", "trophy", "puzzle", "scarf", "scooter", "toaster", "donkey",
+      "zebra", "drumstick", "whistle", "island", "glasses", "cushion", "basket", "motor", "bunny", "train"
+    ],
+    "medium": [
+      "calendar", "notebook", "keyboard", "monitor", "printer", "backpack", "telescope", "umbrella", "battery", "triangle",
+      "rectangle", "magnet", "microwave", "binoculars", "journal", "charger", "paintbrush", "toolbox", "headphones", "marker",
+      "thermometer", "measuring", "flashlight", "compass", "airplane", "helicopter", "skateboard", "volcano", "recycle", "storm",
+      "hurricane", "earthquake", "planetarium", "lollipop", "eraser", "stapler", "cushioned", "raincoat", "calculator", "sunscreen",
+      "popcorn", "icicle", "shampoo", "sweater", "toothbrush", "multitool", "iceberg", "snowflake", "xylophone", "bookmark"
+    ],
+    "hard": [
+      "independence", "temperature", "destination", "inspiration", "recognition", "conversation", "observation", "distribution", "expectation", "celebration",
+      "complication", "construction", "application", "navigation", "illustration", "transportation", "communication", "integration", "responsibility", "prescription",
+      "imagination", "recollection", "cooperation", "identification", "recommendation", "synchronization", "documentation", "multiplication", "confirmation", "presentation",
+      "classification", "limitation", "transformation", "preparation", "determination", "representation", "investigation", "implementation", "collaboration", "appreciation",
+      "fabrication", "notification", "obligation", "substitution", "supervision", "specification", "compartment", "architecture", "refrigerator", "simulation"
+    ],
+    "expert": [
+      "neuroplasticity", "episodic", "procedural", "semantic", "synaptogenesis", "amygdala", "hippocampus", "declarative", "mnemonic", "consolidation",
+      "neurotransmitter", "dopamine", "serotonin", "metacognition", "executivefunction", "cognitivebias", "plasticity", "anterograde", "retrograde", "flashbulb",
+      "shortterm", "longterm", "chunking", "visualization", "attentioncontrol", "workingmemory", "conditioned", "reinforcement", "lateralization", "schema",
+      "recognitioncue", "intrusion", "interference", "decaytheory", "retrieval", "encoding", "primacyeffect", "recencyeffect", "cerebellum", "neocortex",
+      "prefrontal", "mindfulness", "spatialmemory", "neurocognition", "imagerytechnique", "association", "mirrorneurons", "brainstorming", "implicit", "explicit"
+    ]
+  },
+  "grammar": {
+    "beginner": [
+      "noun", "verb", "adjective", "adverb", "sentence", "capital", "letter", "comma", "period", "question",
+      "pronoun", "name", "word", "subject", "object", "he", "she", "it", "they", "you",
+      "we", "I", "was", "is", "are", "am", "were", "have", "has", "do",
+      "did", "go", "come", "see", "say", "play", "run", "walk", "eat", "drink",
+      "school", "book", "pen", "write", "read", "like", "can", "will", "must", "yes"
+    ],
+    "easy": [
+      "article", "conjunction", "preposition", "interjection", "grammar", "phrase", "clause", "plural", "singular", "sentence",
+      "simple", "compound", "present", "past", "future", "tense", "auxiliary", "subject-verb", "agreement", "question",
+      "statement", "command", "exclamation", "capitalization", "punctuation", "contraction", "apostrophe", "quotation", "comma", "colon",
+      "semicolon", "period", "homophone", "homonym", "synonym", "antonym", "prefix", "suffix", "root", "base",
+      "infinitive", "gerund", "participle", "modals", "helping", "linking", "irregular", "verb", "countable", "uncountable"
+    ],
+    "medium": [
+      "possessive", "demonstrative", "reflexive", "intensive", "relative", "interrogative", "conditional", "subjunctive", "imperative", "indicative",
+      "finite", "nonfinite", "predicate", "direct", "indirect", "object", "appositive", "gerundive", "verbal", "phrase",
+      "noun clause", "adjective clause", "adverb clause", "complex sentence", "compound sentence", "parallelism", "ellipsis", "inversion", "dangling modifier", "split infinitive",
+      "run-on", "fragment", "agreement", "antecedent", "tense shift", "voice", "active", "passive", "transitive", "intransitive",
+      "declarative", "interrogative", "exclamatory", "subordinator", "coordinator", "lexical", "morphology", "syntax", "etymology", "usage"
+    ],
+    "hard": [
+      "gerundive", "nominalization", "subordination", "coordination", "postmodifier", "premodifier", "definite", "indefinite", "modality", "ellipsis",
+      "cataphora", "anaphora", "pro-form", "zero article", "non-restrictive", "restrictive", "adjunct", "disjunct", "conjunct", "expletive",
+      "cleft sentence", "inversion", "fronting", "topicalization", "emphatic", "mood", "aspect", "perfect", "progressive", "passive",
+      "finite verb", "bare infinitive", "modal auxiliary", "tense consistency", "subjective mood", "objective case", "predicate adjective", "predicate nominative", "relative clause", "conditional clause",
+      "coordination conjunction", "prepositional phrase", "phrasal verb", "multiword verb", "compound-complex", "subordinate conjunction", "restrictive clause", "nonrestrictive clause", "dangling participle", "gerund phrase"
+    ],
+    "expert": [
+      "syntactic ambiguity", "pragmatics", "semantics", "morphosyntax", "lexicography", "transformational", "generative grammar", "deep structure", "surface structure", "structuralism",
+      "prescriptive grammar", "descriptive grammar", "grammaticalization", "inflection", "derivation", "ellipsis construction", "functional grammar", "valency theory", "complementizer", "anacoluthon",
+      "periphrasis", "affixation", "circumfix", "infix", "ergative", "absolutive", "voicing", "morphophonemics", "phonotactics", "syntactic movement",
+      "case marking", "dependency grammar", "tree diagram", "predicate logic", "subcategorization", "concord", "argument structure", "government", "binding", "coreference",
+      "pronoun resolution", "phrase structure rules", "syntactic tree", "parsing", "adjacency pair", "topic-comment", "information structure", "ellipsis recovery", "phrase marker", "deep case"
+    ]
+  }
+}
