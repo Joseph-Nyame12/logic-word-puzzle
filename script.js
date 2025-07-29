@@ -15,7 +15,7 @@ function startGame(category, level, isDaily = false) {
     alert("Name is required to play.");
     return;
   }
-  fetch('http://127.0.0.1:5000/api/words')
+  fetch('https://logic-word-puzzle.onrender.com/api/words')
     .then(response => response.json())
     .then(data => {
       // Load local custom words
@@ -160,7 +160,7 @@ function showResult() {
   document.getElementById('final-score').textContent = resultMsg;
 
 // ✅ Save to backend
-  fetch('http://localhost:5000/api/scores', {
+  fetch('https://logic-word-puzzle.onrender.com/api/submit-score', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -392,7 +392,7 @@ function skipWord() {
 // DEBUG: Force result screen to test if it shows
 // showResult();
 function showLeaderboard() {
-  fetch('http://localhost:5000/api/leaderboard')
+  fetch('https://logic-word-puzzle.onrender.com/api/leaderboard')
     .then(res => res.json())
     .then(data => {
       const list = document.getElementById('leaderboard-list');
@@ -439,7 +439,7 @@ function startMultiplayerMode() {
 
   const categories = ['bible', 'math', 'code', 'memory', 'grammar'];
   currentCategory = categories[Math.floor(Math.random() * categories.length)];
-  fetch('http://127.0.0.1:5000/api/words')
+  fetch('https://logic-word-puzzle.onrender.com/api/words')
     .then(res => res.json())
     .then(data => {
       const multiplayerLevels = ['medium', 'hard', 'expert'];
