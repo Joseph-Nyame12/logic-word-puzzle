@@ -4,7 +4,7 @@ import os
 import json
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://logic-word-puzzle-frontend.onrender.com"])
 
 words_file = os.path.join(os.path.dirname(__file__), 'words.json')
 scores_file = os.path.join(os.path.dirname(__file__), 'scores.json')
