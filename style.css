@@ -80,3 +80,8 @@ input {
 .hidden {
   display: none;
 }
+#form-status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}

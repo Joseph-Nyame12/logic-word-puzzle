@@ -490,3 +490,32 @@ function showMultiplayerResult() {
   document.getElementById('final-score').textContent = result;
   isMultiplayer = false; // Reset
 }
+const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const endpoint = "https://formspree.io/f/xvgqqpdl"; // Replace this
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        status.innerText = "✅ Message sent!";
+        form.reset();
+      } else {
+        const errorData = await response.json();
+        status.innerText = errorData.errors?.[0]?.message || "❌ Failed to send.";
+      }
+    } catch (error) {
+      status.innerText = "❌ Error submitting form.";
+    }
+  });
