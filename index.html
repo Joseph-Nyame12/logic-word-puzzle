@@ -42,14 +42,15 @@
       </div>
     </div>
 
-   <!-- Admin Access Button -->
-<button onclick="openAdminPopup()">🔒 Admin Access</button>
+   <!-- Admin Login Button -->
+<button onclick="openAdminPopup()" aria-label="Admin Login" title="Admin Login">
+  <span aria-hidden="true">🔒</span> Admin Login
+</button>
 
 <!-- Admin Panel Modal -->
-<div id="admin-popup" class="modal hidden">
+<div id="admin-popup" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="admin-panel-title">
   <div class="modal-content">
-    <h3>Admin Panel – Add Word to Category/Level</h3>
-
+    <h3 id="admin-panel-title">Admin Panel – Add Word to Category/Level</h3>
     <label for="admin-category">Category:</label>
     <select id="admin-category">
       <option value="bible">Bible</option>
@@ -59,7 +60,6 @@
       <option value="daily">Daily</option>
       <option value="grammar">Grammar</option>
     </select>
-
     <label for="admin-level">Level:</label>
     <select id="admin-level">
       <option value="beginner">Beginner</option>
@@ -68,12 +68,11 @@
       <option value="hard">Hard</option>
       <option value="expert">Expert</option>
     </select>
-
-    <input type="text" id="admin-word" placeholder="Enter new word" />
+    <input type="text" id="admin-word" placeholder="Enter new word" aria-label="Enter new word" />
     <button onclick="addAdminWord()">Add Word</button>
     <button onclick="logoutAdmin()">Logout</button>
     <button onclick="closeAdminPopup()">Close</button>
-    <p id="admin-feedback"></p>
+    <p id="admin-feedback" aria-live="polite"></p>
   </div>
 </div>
     <div id="game-screen" class="hidden">

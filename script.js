@@ -563,3 +563,4 @@ const form = document.getElementById("contact-form");
       status.innerText = "❌ Error submitting form.";
     }
   });
+  document.getElementById('scrambled-word').textContent = '⏳ Loading...';
