@@ -1,6 +1,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background:#fff;
+  background: url('Img/puzzle-bg.jpg') repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   text-align: center;
