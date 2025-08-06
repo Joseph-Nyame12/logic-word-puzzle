@@ -9,6 +9,17 @@ let currentCategory = "";
 let playerName = '';
 let hintProgress = 0; // how many letters are revealed
 
+const correctSound = new Audio('sounds/correct.mp3');
+const wrongSound = new Audio('sounds/wrong.wav');
+const timeoutSound = new Audio('sounds/timeout.mp3');
+const countdownSound = new Audio('sounds/countdown.mp3');
+const clickSound = new Audio('sounds/click.wav');
+
+// Optional: preload for smoother playback
+[correctSound, wrongSound, timeoutSound, countdownSound, clickSound].forEach(audio => {
+  audio.preload = 'auto';
+});
+
 function startGame(category, level, isDaily = false) {
   playerName = prompt("Enter your name:");
   if (!playerName) {
@@ -56,6 +67,8 @@ function scramble(word) {
 }
 
 function nextWord() {
+  clickSound.currentTime = 0;
+  clickSound.play();
   clearInterval(timer);
   timeLeft = 30;
   hintProgress = 0;
@@ -88,10 +101,14 @@ function checkAnswer() {
     const currentPlayer = multiplayerData.players[multiplayerData.turn % 2];
     
     if (guess === currentWord) {
+      correctSound.currentTime = 0;
+      correctSound.play();
       currentPlayer.score += 5;
       currentPlayer.coins += 2;
       document.getElementById('feedback').textContent = '✅ Correct! (+2 coins)';
     } else {
+       wrongSound.currentTime = 0;
+       wrongSound.play();
       document.getElementById('feedback').textContent = `❌ Wrong! Correct: ${currentWord}`;
     }
 
@@ -102,11 +119,15 @@ function checkAnswer() {
     
   } else {
     if (guess === currentWord) {
+       correctSound.currentTime = 0;
+       correctSound.play();
       score += 5;
       coins += 2; // 🎁 Reward coins
       localStorage.setItem('puzzleCoins', coins);
       document.getElementById('feedback').textContent = '✅ Correct! (+2 coins)';
     } else {
+      wrongSound.currentTime = 0;
+      wrongSound.play();
       document.getElementById('feedback').textContent = `❌ Wrong! Correct: ${currentWord}`;
     }
 
@@ -124,9 +145,16 @@ function startTimer() {
   timer = setInterval(() => {
     timeLeft--;
     document.getElementById('timer').textContent = `Time: ${timeLeft}`;
+    
+    if (timeLeft <= 5 && timeLeft > 0) {
+  countdownSound.currentTime = 0;
+  countdownSound.play();
+}
 
     if (timeLeft <= 0) {
       clearInterval(timer);
+      timeoutSound.currentTime = 0;
+      timeoutSound.play();
       handleTimeout();
     }
   }, 1000);
@@ -176,6 +204,8 @@ function showResult() {
   });
 }
 function restartGame() {
+  clickSound.currentTime = 0;
+  clickSound.play();
   document.getElementById('result-screen').classList.add('hidden');
   document.getElementById('level-screen').classList.remove('hidden');
 
@@ -325,12 +355,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   categoryButtons.forEach(button => {
     button.addEventListener("click", () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
       currentCategory = button.dataset.category;
       showLevelPopup();
     });
   });
 
   cancelBtn.addEventListener("click", () => {
+    clickSound.currentTime = 0;
+    clickSound.play();
     document.getElementById("level-popup").classList.add("hidden");
   });
 });
@@ -347,6 +381,8 @@ function showLevelPopup() {
       btn.textContent = level.charAt(0).toUpperCase() + level.slice(1);
       btn.classList.add("level-btn");
       btn.onclick = () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
         levelPopup.classList.add("hidden");
         startGame(currentCategory, level);
       };
@@ -355,6 +391,8 @@ function showLevelPopup() {
     levelPopup.classList.remove("hidden");
   }
 function showHint() {
+  clickSound.currentTime = 0;
+  clickSound.play();
   if (coins < 1) {
     alert("Not enough coins for a hint!");
     return;
@@ -375,6 +413,8 @@ function showHint() {
 }
 
 function skipWord() {
+  clickSound.currentTime = 0;
+  clickSound.play();
   if (coins < 2) {
     alert("Not enough coins to skip!");
     return;
@@ -392,6 +432,8 @@ function skipWord() {
 // DEBUG: Force result screen to test if it shows
 // showResult();
 function showLeaderboard() {
+  clickSound.currentTime = 0;
+  clickSound.play();
   fetch('https://logic-word-puzzle.onrender.com/api/leaderboard')
     .then(res => res.json())
     .then(data => {
@@ -455,6 +497,8 @@ function startMultiplayerMode() {
     });
 }
 function nextMultiplayerTurn() {
+  clickSound.currentTime = 0;
+  clickSound.play();
   clearInterval(timer);
   timeLeft = 30;
   document.getElementById('user-input').value = '';
