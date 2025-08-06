@@ -70,6 +70,8 @@ function nextWord() {
   clickSound.currentTime = 0;
   clickSound.play();
   clearInterval(timer);
+  countdownSound.pause();
+  countdownSound.currentTime = 0;
   timeLeft = 30;
   hintProgress = 0;
   document.getElementById('hint').textContent = ''; // clear old hint
@@ -153,6 +155,8 @@ function startTimer() {
 
     if (timeLeft <= 0) {
       clearInterval(timer);
+      countdownSound.pause();
+      countdownSound.currentTime = 0;
       timeoutSound.currentTime = 0;
       timeoutSound.play();
       handleTimeout();
@@ -500,6 +504,8 @@ function nextMultiplayerTurn() {
   clickSound.currentTime = 0;
   clickSound.play();
   clearInterval(timer);
+  countdownSound.pause();
+  countdownSound.currentTime = 0;
   timeLeft = 30;
   document.getElementById('user-input').value = '';
   document.getElementById('hint').textContent = '';
