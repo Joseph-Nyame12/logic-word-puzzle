@@ -373,6 +373,17 @@ document.addEventListener("DOMContentLoaded", () => {
       muteBtn.setAttribute('aria-label', isMuted ? 'Unmute sounds' : 'Mute sounds');
     });
   }
+
+  // Game button event listeners
+  document.getElementById('submit-btn').addEventListener('click', checkAnswer);
+  document.getElementById('hint-btn').addEventListener('click', showHint);
+  document.getElementById('skip-btn').addEventListener('click', skipWord);
+  document.getElementById('next-btn').addEventListener('click', nextWord);
+
+  // Admin button event listeners
+  document.getElementById('admin-add-btn').addEventListener('click', addAdminWord);
+  document.getElementById('admin-logout-btn').addEventListener('click', logoutAdmin);
+  document.getElementById('admin-close-btn').addEventListener('click', closeAdminPopup);
 });
 
   // Create level buttons dynamically

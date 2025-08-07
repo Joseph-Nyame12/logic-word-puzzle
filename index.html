@@ -69,9 +69,9 @@
       <option value="expert">Expert</option>
     </select>
     <input type="text" id="admin-word" placeholder="Enter new word" aria-label="Enter new word" />
-    <button onclick="addAdminWord()">Add Word</button>
-    <button onclick="logoutAdmin()">Logout</button>
-    <button onclick="closeAdminPopup()">Close</button>
+    <button id="admin-add-btn">Add Word</button>
+    <button id="admin-logout-btn">Logout</button>
+    <button id="admin-close-btn">Close</button>
     <p id="admin-feedback" aria-live="polite"></p>
   </div>
 </div>
@@ -93,10 +93,10 @@
   <p id="feedback"></p>
 
   <div style="margin-top: 10px;">
-    <button onclick="checkAnswer()">Submit</button>
-    <button onclick="showHint()">Hint</button>
-    <button onclick="skipWord()">Skip</button>
-    <button id="next-btn" onclick="nextWord()" class="hidden">Next Word</button>
+    <button id="submit-btn">Submit</button>
+    <button id="hint-btn">Hint</button>
+    <button id="skip-btn">Skip</button>
+    <button id="next-btn" class="hidden">Next Word</button>
   </div>
 </div>
   </div>
