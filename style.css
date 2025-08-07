@@ -157,3 +157,19 @@ button:focus, input:focus, select:focus {
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+form#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+form#contact-form input,
+form#contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+form#contact-form button {
+  align-self: flex-start;
+}
