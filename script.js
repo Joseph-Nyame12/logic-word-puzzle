@@ -548,7 +548,7 @@ if (form) {
     e.preventDefault();
 
     const data = new FormData(form);
-    const endpoint = "https://formspree.io/f/xvgqqpdl"; // Replace this
+    const endpoint = "https://formspree.io/f/myzpbpbl"; // Updated Formspree endpoint
 
     try {
       const response = await fetch(endpoint, {
