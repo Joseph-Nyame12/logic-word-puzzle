@@ -349,6 +349,7 @@ const levels = ["beginner", "easy", "medium", "hard", "expert"];
 document.addEventListener("DOMContentLoaded", () => {
   const categoryButtons = document.querySelectorAll(".category-btn");
   const cancelBtn = document.getElementById("cancel-btn");
+  const muteBtn = document.getElementById('mute-btn');
 
   categoryButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -362,6 +363,14 @@ document.addEventListener("DOMContentLoaded", () => {
     cancelBtn.addEventListener("click", () => {
       playSound(clickSound);
       document.getElementById("level-popup").classList.add("hidden");
+    });
+  }
+
+  if (muteBtn) {
+    muteBtn.addEventListener('click', function() {
+      isMuted = !isMuted;
+      muteBtn.textContent = isMuted ? '🔇' : '🔊';
+      muteBtn.setAttribute('aria-label', isMuted ? 'Unmute sounds' : 'Mute sounds');
     });
   }
 });
@@ -437,7 +446,6 @@ function showLeaderboard() {
         li.textContent = `${i + 1}. ${entry.name} - ${entry.score}`;
         list.appendChild(li);
       });
-
       document.getElementById('result-screen').classList.add('hidden');
       document.getElementById('leaderboard-screen').classList.remove('hidden');
     });
@@ -560,16 +568,6 @@ const form = document.getElementById("contact-form");
   document.getElementById('scrambled-word').textContent = '⏳ Loading...';
 
 let isMuted = false;
-
-// Mute button logic
-const muteBtn = document.getElementById('mute-btn');
-if (muteBtn) {
-  muteBtn.addEventListener('click', function() {
-    isMuted = !isMuted;
-    muteBtn.textContent = isMuted ? '🔇' : '🔊';
-    muteBtn.setAttribute('aria-label', isMuted ? 'Unmute sounds' : 'Mute sounds');
-  });
-}
 
 function playSound(sound) {
   if (!isMuted) {
