@@ -92,7 +92,6 @@ function nextWord() {
   document.getElementById('scrambled-word').textContent = scrambled;
 
   startTimer();
-  currentIndex++;
 }
 
 function checkAnswer() {
@@ -116,6 +115,7 @@ function checkAnswer() {
     document.getElementById('coins').textContent = `Coins: ${currentPlayer.coins}`;
     document.getElementById('next-btn').onclick = nextMultiplayerTurn;
     multiplayerData.turn++;
+    currentIndex++;
     
   } else {
     if (guess === currentWord) {
@@ -132,6 +132,7 @@ function checkAnswer() {
     document.getElementById('score').textContent = `Score: ${score}`;
     document.getElementById('coins').textContent = `Coins: ${coins}`;
     document.getElementById('next-btn').onclick = nextWord;
+    currentIndex++;
   }
 
   document.getElementById('next-btn').classList.remove('hidden');
@@ -432,6 +433,7 @@ function skipWord() {
   clearInterval(timer);
   document.getElementById('feedback').textContent = `⏩ Skipped! Correct was: ${currentWord} (-2 coins)`;
   document.getElementById('next-btn').classList.remove('hidden');
+  currentIndex++; // increment index when skipping
 }
 
 // DEBUG: Force result screen to test if it shows
@@ -539,8 +541,9 @@ function showMultiplayerResult() {
   isMultiplayer = false; // Reset
 }
 const form = document.getElementById("contact-form");
-  const status = document.getElementById("form-status");
+const status = document.getElementById("form-status");
 
+if (form) {
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
@@ -567,7 +570,9 @@ const form = document.getElementById("contact-form");
       status.innerText = "❌ Error submitting form.";
     }
   });
-  document.getElementById('scrambled-word').textContent = '⏳ Loading...';
+}
+
+document.getElementById('scrambled-word').textContent = '⏳ Loading...';
 
 function playSound(sound) {
   sound.currentTime = 0;
