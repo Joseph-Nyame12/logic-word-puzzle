@@ -157,19 +157,3 @@ button:focus, input:focus, select:focus {
   clip: rect(0,0,0,0);
   border: 0;
 }
-
-/* --- Mute button styling --- */
-#mute-btn {
-  background: rgba(255,255,255,0.85);
-  border: none;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  transition: background 0.2s;
-}
-#mute-btn:hover {
-  background: #ffe066;
-}

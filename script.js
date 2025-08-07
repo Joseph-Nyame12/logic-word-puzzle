@@ -349,7 +349,6 @@ const levels = ["beginner", "easy", "medium", "hard", "expert"];
 document.addEventListener("DOMContentLoaded", () => {
   const categoryButtons = document.querySelectorAll(".category-btn");
   const cancelBtn = document.getElementById("cancel-btn");
-  const muteBtn = document.getElementById('mute-btn');
 
   categoryButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -363,14 +362,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cancelBtn.addEventListener("click", () => {
       playSound(clickSound);
       document.getElementById("level-popup").classList.add("hidden");
-    });
-  }
-
-  if (muteBtn) {
-    muteBtn.addEventListener('click', function() {
-      isMuted = !isMuted;
-      muteBtn.textContent = isMuted ? '🔇' : '🔊';
-      muteBtn.setAttribute('aria-label', isMuted ? 'Unmute sounds' : 'Mute sounds');
     });
   }
 
@@ -578,14 +569,7 @@ const form = document.getElementById("contact-form");
   });
   document.getElementById('scrambled-word').textContent = '⏳ Loading...';
 
-let isMuted = false;
-
 function playSound(sound) {
-  if (!isMuted) {
-    sound.currentTime = 0;
-    sound.play();
-  } else {
-    sound.pause();
-    sound.currentTime = 0;
-  }
+  sound.currentTime = 0;
+  sound.play();
 }
