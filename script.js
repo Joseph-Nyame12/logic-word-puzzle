@@ -569,10 +569,12 @@ if (form) {
     } catch (error) {
       status.innerText = "❌ Error submitting form.";
     }
+    return false; // Prevent any default redirect or reload
   });
 }
 
-document.getElementById('scrambled-word').textContent = '⏳ Loading...';
+const scrambledWordElem = document.getElementById('scrambled-word');
+if (scrambledWordElem) scrambledWordElem.textContent = '⏳ Loading...';
 
 function playSound(sound) {
   sound.currentTime = 0;
