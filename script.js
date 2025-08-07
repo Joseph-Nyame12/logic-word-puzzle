@@ -358,10 +358,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  cancelBtn.addEventListener("click", () => {
-    playSound(clickSound);
-    document.getElementById("level-popup").classList.add("hidden");
-  });
+  if (cancelBtn) {
+    cancelBtn.addEventListener("click", () => {
+      playSound(clickSound);
+      document.getElementById("level-popup").classList.add("hidden");
+    });
+  }
 });
 
   // Create level buttons dynamically
